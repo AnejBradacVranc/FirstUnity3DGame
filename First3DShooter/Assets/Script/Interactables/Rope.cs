@@ -16,7 +16,7 @@ public class Rope : Interactable
     {
         playerJoint = player.GetComponent<ConfigurableJoint>();
         playerRb = player.GetComponent<Rigidbody>();
-        capsuleCollider=player.GetComponent<CapsuleCollider>();
+        capsuleCollider=player.GetComponent<CapsuleCollider>();        
         isSwinging = false;        
     }
 
