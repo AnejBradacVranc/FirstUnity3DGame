@@ -7,6 +7,7 @@ public class PlayerLook : MonoBehaviour
     public Camera cam;
     public float xRotation = 0f;
     public float yRotation = 0f;
+    public float xMouse =0f;
 
     public float xSensitivity = 30f;
     public float ySensitivity = 30f;
@@ -15,6 +16,7 @@ public class PlayerLook : MonoBehaviour
     {
         float mouseX = input.x;
         float mouseY = input.y;
+        xMouse = mouseX;
         //Izraèuna se camera rotation za gledanje gor in dol
         xRotation -= (mouseY * Time.deltaTime)*ySensitivity; //gor dol
         xRotation = Mathf.Clamp(xRotation, -80, 80);
